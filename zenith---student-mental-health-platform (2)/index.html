@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith - Student Mental Health Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4A90E2',   // Calming blue
+              secondary: '#7ED321', // Positive green
+              warning: '#F5A623',   // Moderate orange
+              danger: '#D0021B',    // High stress red
+              background: '#F8F9FA',
+              text: '#333333',
+              card: '#FFFFFF',
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "dotenv/": "https://aistudiocdn.com/dotenv@^17.2.3/",
+    "nodemailer": "https://aistudiocdn.com/nodemailer@^7.0.10",
+    "node-cron": "https://aistudiocdn.com/node-cron@^4.2.1",
+    "mongoose": "https://aistudiocdn.com/mongoose@^8.19.4",
+    "crypto": "https://aistudiocdn.com/crypto@^1.0.1",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.3",
+    "marked": "https://aistudiocdn.com/marked@^14.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
